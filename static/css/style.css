@@ -1,0 +1,42 @@
+div Your Account{
+  text-align: center;
+  width: 80%
+  
+}
+
+ {
+  min-height: 100px;
+  width: 100%;
+  background-color: red;
+}
+
+ {
+  min-height: 100px;
+  width: 100%;
+  background-color: blue;
+}
+
+#Manhattan {
+  min-height: 100px;
+  width: 100%;
+  background-color: purple;
+}
+
+#Staten_Island {
+  min-height: 100px;
+  width: 100%;
+  background-color: yellow;
+}
+
+#The_Bronx {
+  min-height: 100px;
+  width: 100%;
+  background-color: green;
+}
+
+img {
+  margin: 5px;
+  display: inline-flex;
+  height: 150px;
+  width: auto;
+}

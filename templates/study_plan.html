@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Study Plan</title>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+    <body>
+	<h1>study_plan</h1>
+    <h3>You need to improve your grade in {{user_academics.my_hard_class}} by {{study_plan.points}} to achieve a 
+        {{user_academics.my_goal}}</h3>
+    <div class="row">
+      <div class="col">Monday</div>
+      <div class="col">Tuesday</div>
+      <div class="col">Wednesday</div>
+      <div class="col">Thursday</div>
+      <div class="col">Friday</div>
+      <div class="col">Saturday</div>
+      <div class="col">Sunday</div>
+    </div>
+    <div class="row">
+      <div class="col">{{user_academics.my_hard_class}}
+          <br>{{user_academics.my_current_assignment}}
+          <br>{{study_plan.plan}}
+      </div>
+      <div class="col">Tuesday</div>
+      <div class="col">Wednesday</div>
+      <div class="col">Thursday</div>
+      <div class="col">Friday</div>
+      <div class="col">Saturday</div>
+      <div class="col">Sunday</div>
+    </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
