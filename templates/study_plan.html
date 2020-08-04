@@ -1,35 +1,95 @@
-<html>
-    <head>
-        <title>Study Plan</title>
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    </head>
-    <body>
-	<h1>study_plan</h1>
-    <h3>You need to improve your grade in {{user_academics.my_hard_class}} by {{study_plan.points}} to achieve a 
-        {{user_academics.my_goal}}</h3>
-    <div class="row">
-      <div class="col">Monday</div>
-      <div class="col">Tuesday</div>
-      <div class="col">Wednesday</div>
-      <div class="col">Thursday</div>
-      <div class="col">Friday</div>
-      <div class="col">Saturday</div>
-      <div class="col">Sunday</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Estudiantes</title>
+
+  <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-frontpage.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Estudiantes</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="row">
-      <div class="col">{{user_academics.my_hard_class}}
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-primary py-5 mb-5">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1 class="display-4 text-white mt-5 mb-2">Estudiantes!</h1>
+          <p class="lead mb-5 text-white-50">The easy to use app that helps you want to study!</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+	<h1 style="text-align: center;">study_plan</h1>
+    <h3 style="text-align: center;">You need to improve your grade in {{user_academics.my_hard_class}} by {{study_plan.points}} to achieve a 
+        {{user_academics.my_goal}}</h3>
+
+
+    <h4 style="text-align: center;">{{user_academics.my_hard_class}}
           <br>{{user_academics.my_current_assignment}}
           <br>{{study_plan.plan}}
-      </div>
-      <div class="col">Tuesday</div>
-      <div class="col">Wednesday</div>
-      <div class="col">Thursday</div>
-      <div class="col">Friday</div>
-      <div class="col">Saturday</div>
-      <div class="col">Sunday</div>
+    </h4>
+
+    <div class="card" style="margin: auto; width: 40rem;">
+        <img class="card-img-top" src="https://d2r55xnwy6nx47.cloudfront.net/uploads/2020/06/Math-Beauty_1200_social.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Your Action Plan</h5>
+            <p class="card-text">Tomorrow, you should complete 2 more pages of practice than usual. Ask your support person to check that you've done it.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">An activity you can try when you finish is weaving.</li>
+            <li class="list-group-item">Email your teacher to share your plan.</li>
+            <li class="list-group-item">You can do this! I know you care about school if you've come this far.</li>
+            <li class="list-group-item">{{user_academics.my_hard_class}} is going to be great!</li>
+        </ul>
+        <div class="card-body">
+            <a href="https://www.khanacademy.com" class="card-link">A Website for Learning</a>
+            <a href="https://www.wikihow.com/Email-Teachers" class="card-link">Guide to Reaching out</a>
+        </div>
     </div>
     </body>
 </html>
+
 
 
 

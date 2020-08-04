@@ -46,32 +46,47 @@
 			</div>
 		</div>
 	</nav>
-    <h1> Sounds like you struggle with procrastination despite having a support system!
-    <!--<h1>procrastination:{{user_answers.procrastination}} support:{{user_answers.support}}</h1>-->
-    <!--<div class="container">-->
+    <h1> Sounds like you struggle with procrastination despite having a support system!</h1>
+    <h1>procrastination:{{user_answers.procrastination}} support:{{user_answers.support}}</h1>
+    <div class="container" style="margin: auto;">
         <form method="POST" action="/study_plan">
             <div class="row">
+                <div class = "col-lg-6">
+        
                 <input type="text" name="hard_class" placeholder="What is your hardest class?"/>
+                </div>
             </div>
             <div class="row">
+                 <div class = "col-lg-6">
                 <input type="text" name="average" placeholder="What is your approximate average in that class?"/>
             </div>
+            </div>
+
             <div class="row">
+                <div class = "col-lg-6">
                 <input type="text" name="goal" placeholder="What would you like your average to be in that class?"/>
             </div>
-            <div class="row">
-                <input type="text" name="homework" placeholder="Do you have anything due in that class right now?"/>
             </div>
             <div class="row">
-            <select id="What kind of assignment(s) do you want us to help with" name="assignment_type">
+                <div class = "col-lg-6">
+                <input type="text" name="homework" placeholder="Do you have anything due in that class right now?"/>
+            </div>
+            </div>
+            <div class="row">
+                <div class = "col-lg-6">
+            <label for="assignment_type"> "What kind of assignment(s) do you want us to help with"</label>
+            <select class="form-control"name="assignment_type"> 
             <option value="project">project/essay</option>
             <option value="regular">routine *</option>
             <option value="test">test/big quiz</option>
             <option value="makeup">makeup</option>
             </select>
             </div>
+            </div>
             <div class="row">
+                <div class = "col-lg-6">
                 <input type="submit" value="Submit"/>
+            </div>
             </div>
             <p>*When we say routine we are referring to homework that you receive on a daily or constant basis such as pop quizzes, reading, and practice problems.</p>
         </form>

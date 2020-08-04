@@ -20,17 +20,17 @@ def index():
 def survey():
     return render_template("survey.html")
 
-@app.route('/results')
+@app.route('/results', methods =["GET", "POST"])
 def results():
-    return render_template('results.html')
-    #if request.method="POST":
-      #print(my_answer_procrastination)
-        # print(my_answer_support)
-        #user_answers = {
-         #   "procrastination": my_answer_procrastination,
-            #"support": my_answer_support
-         #   }
-       # return render_template('results.html', user_answers=user_answers)
+    if request.method=="POST":
+        my_answer_procrastination=request.form["procrastination"]
+        my_answer_support=request.form["support"]
+        print(my_answer_support)
+        user_answers = {
+           "procrastination": my_answer_procrastination,
+            "support": my_answer_support
+        }
+        return render_template('results.html', user_answers=user_answers)
 
 @app.route('/study_plan', methods=["GET", "POST"])
 def study_plan():

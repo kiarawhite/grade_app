@@ -66,37 +66,26 @@
                 <input type="submit" value="Submit"/>
             </form>
         </div>-->
-        <form action="/results" method="POST">
-            <div class="form-group">
-                
-                <label for="procrastination">Do you struggle with academic procrastination?</label>
-                <select class="form-control">
-                <option name="procrastination">Yes</option>
-                <option name="procrastination"> No</option>
-                </select>
-                <select class="form-control">
-                    <option>Yes</option>
-                    <option>No</option>
-                </select>
-            </div>
-
-                <div class ="form-group">
+        <div class = "container" style="margin: auto;">
+            <form action="/results" method="POST">
+                <div class ="form-group" style="margin: auto; width: 50rem;">
+                    
+                    <label style="margin:0 auto; width: 100rem;" for="procrastination">Do you struggle with academic procrastination?</label>
+                    <select class="form-control"name="procrastination">
+                    <option value="yes">Yes</option>
+                    <option value="no"> No</option>
+                    </select>
                     <label for="support"name="support">Have you found someone who helps you stay on track?</label>
-                    <select class="form-control">
-                    <option name="support">Yes</option>
-                    <option name="support">No</option>
+                    <select class="form-control"name="support"> 
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
                     </select>
                         <input type="submit" value="Submit" />
-                </div>
-            </form>
+                    </div>
+                </form>
         </div>
-	
-    </div>
 
     
-
-
-    </div>
 
 
 </body>
